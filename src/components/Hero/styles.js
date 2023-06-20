@@ -21,7 +21,6 @@ export const Container = styled.div`
 
   > .cards-section {
     position: relative;
-    width: 41rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,14 +67,15 @@ export const Container = styled.div`
         width: 522px;
         display: block;
         position: absolute;
-        left: 0;
+        left: -41.0rem;
+        bottom: -5.1rem;
         animation: swiperight 1s 0.5s backwards;
       }
 
       button {
         width: 35.2rem;
-        bottom: 0.9rem;
-        left: 4.5rem;
+        bottom: 3.4rem;
+        left: -36.6rem;
         transition: 0.5s;
       }
 

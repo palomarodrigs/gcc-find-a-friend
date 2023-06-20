@@ -14,14 +14,10 @@ export const Header = ({ onToggleMenu }) => {
 
       <ul>
         <li>
-          <a className='item' href='#'>
-            Home
-          </a>
+          <a href='#'>Home</a>
         </li>
         <li>
-          <a className='item' href='#'>
-            Sobre o app
-          </a>
+          <a href='#about-app'>Sobre o app</a>
         </li>
         <li>
           <a href='#'>Animais disponíveis</a>
@@ -53,7 +49,7 @@ export const Header = ({ onToggleMenu }) => {
                 <a href='#'>Home</a>
               </li>
               <li>
-                <a href='#'>Sobre o app</a>
+                <a href='#about-app'>Sobre o app</a>
               </li>
               <li>
                 <a href='#'>Animais disponíveis</a>
