@@ -41,20 +41,65 @@ export const Container = styled.div`
     }
   }
 
+  #friends-available {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 2rem;
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
+
+    .friends-content {
+      width: 32rem;
+      height: 66.5rem;
+      padding: 6rem 3.2rem;
+
+      border-radius: 2rem;
+      background-color: ${({ theme }) => theme.COLORS.RED_800};
+      animation: topdown 1s 0.5s backwards;
+
+      h2 {
+        font-size: 3rem;
+        line-height: 90%;
+        text-align: center;
+        margin-bottom: 4rem;
+        color: ${({ theme }) => theme.COLORS.YELLOW};
+        animation: topdown 1s 0.6s backwards;
+      }
+
+      p {
+        line-height: 110%;
+        letter-spacing: -0.32px;
+        margin-bottom: 2rem;
+        animation: topdown 1s 0.7s backwards;
+      }
+
+      button {
+        margin-bottom: 3rem;
+        animation: topdown 1s 0.8s backwards;
+      }
+
+      .carousel-container {
+        animation: topdown 1s 0.9s backwards;
+      }
+    }
+  }
+
   @media (min-width: 1024px) {
     #hero {
       height: 62.2rem;
     }
 
     #about-app {
-      align-items: flex-start;
+      align-items: center;
       padding: 10rem 11.2rem;
 
       h1 {
+        align-self: flex-start;
         width: 87.3rem;
         font-size: 4.8rem;
-        margin: 0 0 8rem 0;
-        animation: swipeleft 1s .3s backwards;
+        margin: 0 0 8rem 6.6rem;
+        animation: swipeleft 1s 0.3s backwards;
       }
 
       .cards {
@@ -63,7 +108,7 @@ export const Container = styled.div`
         grid-template-areas:
           'TopLeft TopRight Right'
           'Bottom Bottom Right';
-        animation: swiperight 1s .4s backwards;
+        animation: swiperight 1s 0.4s backwards;
 
         div:nth-child(1) {
           grid-area: TopLeft;
@@ -79,6 +124,52 @@ export const Container = styled.div`
 
         div:nth-child(4) {
           grid-area: Right;
+        }
+      }
+    }
+
+    #friends-available {
+      .friends-content {
+        position: relative;
+        width: 121.6rem;
+        height: 62.8rem;
+        padding: 10rem 10.4rem;
+
+        display: grid;
+        grid-template-areas:
+          'TITLE TEXT'
+          'BUTTON CAROUSEL';
+        animation: topdown 1s 0.5s backwards;
+
+        h2 {
+          grid-area: TITLE;
+          width: 41.6rem;
+          font-size: 4.8rem;
+          text-align: left;
+          margin: 0 10rem 11.6rem 0;
+          animation: swipeleft 1s 0.6s backwards;
+        }
+
+        button {
+          grid-area: BUTTON;
+          width: 23.1rem;
+          height: 7.2rem;
+          animation: swipeleft 1s 0.7s backwards;
+        }
+
+        p {
+          grid-area: TEXT;
+          width: 49.0rem;
+          font-size: 2rem;
+          letter-spacing: -0.4px;
+          animation: topdown 1s 0.8s backwards;
+        }
+
+        .carousel-container {
+          position: absolute;
+          right: 6rem;
+          bottom: 3rem;
+          animation: swiperight 1s 0.9s backwards;
         }
       }
     }

@@ -20,7 +20,7 @@ export const Header = ({ onToggleMenu }) => {
           <a href='#about-app'>Sobre o app</a>
         </li>
         <li>
-          <a href='#'>Animais disponíveis</a>
+          <a href='#friends-available'>Animais disponíveis</a>
         </li>
         <li>
           <a href='#'>Sobre a FindAFriend</a>
@@ -52,7 +52,7 @@ export const Header = ({ onToggleMenu }) => {
                 <a href='#about-app'>Sobre o app</a>
               </li>
               <li>
-                <a href='#'>Animais disponíveis</a>
+                <a href='#friends-available'>Animais disponíveis</a>
               </li>
               <li>
                 <a href='#'>Sobre a FindAFriend</a>
