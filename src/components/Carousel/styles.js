@@ -59,12 +59,10 @@ export const CarouselContainer = styled.div`
         max-width: 7.2rem;
         max-height: 7.2rem;
         padding: 2.4rem;
-        border-radius: 1.5rem;
-      }
 
-      .prev {
-        background-color: transparent;
+        border-radius: 1.5rem;
         border: 0.1rem solid ${({ theme }) => theme.COLORS.WHITE};
+        background-color: transparent;
         transition: 0.7s;
 
         svg {
@@ -72,7 +70,8 @@ export const CarouselContainer = styled.div`
         }
       }
 
-      .prev:hover {
+      .prev:hover,
+      .next:hover {
         background-color: ${({ theme }) => theme.COLORS.WHITE};
 
         svg {

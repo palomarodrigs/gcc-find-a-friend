@@ -26,6 +26,10 @@ Depois é só entrar em contato com a ONG para agendar uma visita e conhecer pes
 
 </br>
 
+## 🚀 Deploy
+
+Você pode acessar o projeto através [desse link](https://gcc-findafriend.vercel.app/)
+
 ---
 
 <p align="center">Developed with ❤️ by <a href="https://www.linkedin.com/in/paloma-rodrigues-539000233/" target="_blank">Paloma Rodrigues</a></p>

@@ -23,10 +23,10 @@ export const Header = ({ onToggleMenu }) => {
           <a href='#friends-available'>Animais disponíveis</a>
         </li>
         <li>
-          <a href='#'>Sobre a FindAFriend</a>
+          <a href='#about-findafriend'>Sobre a FindAFriend</a>
         </li>
         <li>
-          <a href='#'>Contato</a>
+          <a href='#contact'>Contato</a>
         </li>
       </ul>
 
@@ -55,10 +55,10 @@ export const Header = ({ onToggleMenu }) => {
                 <a href='#friends-available'>Animais disponíveis</a>
               </li>
               <li>
-                <a href='#'>Sobre a FindAFriend</a>
+                <a href='#about-findafriend'>Sobre a FindAFriend</a>
               </li>
               <li>
-                <a href='#'>Contato</a>
+                <a href='#contact'>Contato</a>
               </li>
             </ul>
           </nav>

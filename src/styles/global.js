@@ -16,8 +16,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.COLORS.RED_800};
     color: ${({ theme }) => theme.COLORS.WHITE};
+    background-color: ${({ theme }) => theme.COLORS.RED_800};
 
     -webkit-font-smoothing: antialiased;
   }
@@ -41,5 +41,21 @@ export default createGlobalStyle`
 
   button:hover, a:hover {
     filter: brightness(0.9);
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    border-radius: 9999px;
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: ${({ theme }) => theme.COLORS.GRAY_300};
+    
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
 `

@@ -4,13 +4,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 5.2rem 0;
+  background-color: ${({ theme }) => theme.COLORS.RED_800};
 
   > .main-section {
     padding: 0 2.2rem;
 
     h1 {
       font-size: 4.4rem;
-      margin: 3.5rem 0 5.5rem;
+      margin: 3.5rem 0 5rem;
       animation: swipeleft 1s 0.3s backwards;
     }
 

@@ -7,8 +7,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.4rem 2rem;
 
+  padding: 2.4rem 2rem;
   background-color: ${({ theme }) => theme.COLORS.RED_900};
 
   img {
@@ -20,15 +20,14 @@ export const Container = styled.div`
   }
 
   > .menu {
-    position: relative;
-
     nav {
       position: absolute;
       top: 2rem;
-      left: -36rem;
+      left: 0rem;
+      right: 0rem;
       z-index: 1;
 
-      width: 42rem;
+      width: 100%;
       height: 23rem;
       padding: 2rem 2.8rem;
 
@@ -40,11 +39,11 @@ export const Container = styled.div`
       border-radius: 0rem 0rem 2rem 2rem;
       background-color: ${({ theme }) => theme.COLORS.RED_900};
 
-      transform: translateY(4.0rem);
+      transform: translateY(4rem);
       transition: transform 0.3s;
 
       .line {
-        width: 34rem;
+        width: 100%;
         opacity: 0.2;
         border: 0.1rem solid ${({ theme }) => theme.COLORS.WHITE};
       }
@@ -57,8 +56,6 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
-
-        /* animation: topdown 1s 0.3s backwards; */
 
         a {
           font-size: 1.8rem;

@@ -4,6 +4,9 @@ export default {
     DARK: '#000000',
     DARK_BLUE: '#0D3B66',
 
+    GRAY_300: ' rgba(217,217,227,.8)',
+    GRAY_100: '#d9d9e3',
+
     BORDER: 'rgba(241, 81, 86, 0.3)',
 
     RED_900: '#E44449',

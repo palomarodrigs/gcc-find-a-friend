@@ -27,7 +27,7 @@ export const Container = styled.div`
   img:nth-child(1) {
     width: 100%;
     position: absolute;
-    top: -2.8rem;
+    top: -1.5rem;
   }
 
   img:nth-child(2) {
@@ -36,13 +36,14 @@ export const Container = styled.div`
 
   &:nth-child(4) {
     width: 100%;
-    height: 21.5rem;
-
     position: relative;
-    border-radius: 0;
 
     padding: 0;
     margin-top: 6.5rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin: 0;
   }
 
   @media (min-width: 1024px) {
